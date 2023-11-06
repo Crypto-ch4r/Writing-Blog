@@ -219,8 +219,16 @@ img{
     background-color: var(--black);
 }
 
+.primary--button:hover{
+    background-color: var(--primaryColor);
+}
+
 .secondary--button{
     background-color: var(--primaryColor);
+}
+
+.secondary--button:hover{
+    background-color: var(--black);
 }
 
 .workshops {
