@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie's Writing Blog</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="description" content="writing blog webpage">
+    
+    <!-- Prefetch -->
+    <link rel="prefetch" href="about.html" as="document">    
+    
+
+    <!-- Preload -->
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 
@@ -36,7 +49,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img">
-                        <img src="img/entrada1.jpg" alt="entrada1">
+                        <picture>
+                            <source loading="lazy" srcset="img/entrada1.webp" type="image/webp">
+                            <img loading="lazy" src="img/entrada1.jpg" alt="entrada1">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4>10 Essential Tips for Overcoming Writer's Block and Boosting Creativity</h4>
@@ -49,7 +65,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img">
-                        <img src="img/entrada2.jpg" alt="entrada2">
+                        <picture>
+                            <source loading="lazy" srcset="img/entrada2.webp" type="image/webp">
+                            <img loading="lazy" src="img/entrada2.jpg" alt="entrada2">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4>The Art of Crafting Memorable Characters: Tips for Writers</h4>
@@ -62,7 +81,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img">
-                        <img src="img/entrada3.jpg" alt="entrada3">
+                        <picture>
+                            <source loading="lazy" srcset="img/entrada3.webp" type="image/webp">
+                            <img loading="lazy" src="img/entrada3.jpg" alt="entrada3">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4>Self-Publishing vs. Traditional Publishing: Pros and Cons</h4>
@@ -75,7 +97,10 @@
 
                 <article class="entrada">
                     <div class="entrada__img">
-                        <img src="img/entrada4.jpg" alt="entrada4">
+                        <picture>
+                            <source loading="lazy" srcset="img/entrada4.webp" type="image/webp">
+                            <img loading="lazy" src="img/entrada4.jpg" alt="entrada4">
+                        </picture>
                     </div>
                     <div class="entrada__contenido">
                         <h4>The Power of Visual Storytelling: Incorporating Imagery into Your Writing</h4>
@@ -98,7 +123,7 @@
                     <p class="widget-workshop__label">Workshop capacity:
                         <span class="widget-workshop__info">20</span>
                     </p>
-                    <a href="entrada.html" class="button secondary--button">Read more</a>
+                    <a href="entrada.html" class="button secondary--button">Read more about the workshop</a>
                 </li>
 
                 <li class="widget-workshop">
@@ -109,7 +134,7 @@
                     <p class="widget-workshop__label">Workshop capacity:
                         <span class="widget-workshop__info">20</span>
                     </p>
-                    <a href="entrada.html" class="button secondary--button">Read more</a>
+                    <a href="entrada.html" class="button secondary--button">Read more about the workshop</a>
                 </li>
 
                 <li class="widget-workshop">
@@ -120,25 +145,27 @@
                     <p class="widget-workshop__label">Workshop capacity:
                         <span class="widget-workshop__info">20</span>
                     </p>
-                    <a href="entrada.html" class="button secondary--button">Read more</a>
+                    <a href="entrada.html" class="button secondary--button">Read more about the workshop</a>
                 </li>
             </ul>
         </aside>
     </div>
-</body>
-<footer class="footer">
-    <div class="container">
-        <div class="bar">
-            <a href="index.html" class="logo">
-                <h1 class="logo__name center-text">Charlie's <span class="logo__bold">Writing Blog</span></h1>
-            </a>
 
-            <nav class="navegation">
-                <a href="about.html" class="navegation__link">About</a>
-                <a href="workshops.html" class="navegation__link">Workshops</a>
-                <a href="contact.html" class="navegation__link">Contact</a>
-            </nav>
-        </div>
-    </div>
-</footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="bar">
+                    <a href="index.html" class="logo">
+                        <h1 class="logo__name center-text">Charlie's <span class="logo__bold">Writing Blog</span></h1>
+                    </a>
+
+                    <nav class="navegation">
+                        <a href="about.html" class="navegation__link">About</a>
+                        <a href="workshops.html" class="navegation__link">Workshops</a>
+                        <a href="contact.html" class="navegation__link">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/modernizr.js"></script>
+    </body>
 </html>

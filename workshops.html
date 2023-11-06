@@ -35,7 +35,10 @@
 
         <div class="workshop">
             <div class="workshop__img">
-                <img src="img/curso1.jpg" alt="Workshop img">
+                <picture>
+                    <source loading="lazy" srcset="img/workshop1.webp" type="image/webp">
+                    <img loading="lazy" src="img/workshop1.jpg" alt="workshop1">
+                </picture>
             </div>
             
             <div class="workshop__info">
@@ -56,7 +59,10 @@
 
         <div class="workshop">
             <div class="workshop__img">
-                <img src="img/curso2.jpg" alt="Workshop img">
+                <picture>
+                    <source loading="lazy" srcset="img/workshop2.webp" type="image/webp">
+                    <img loading="lazy" src="img/workshop2.jpg" alt="workshop2">
+                </picture>
             </div>
             
             <div class="workshop__info">
@@ -77,7 +83,10 @@
 
         <div class="workshop">
             <div class="workshop__img">
-                <img src="img/curso3.jpg" alt="Workshop img">
+                <picture>
+                    <source loading="lazy" srcset="img/workshop3.webp" type="image/webp">
+                    <img loading="lazy" src="img/workshop3.jpg" alt="workshop3">
+                </picture>
             </div>
             
             <div class="workshop__info">
@@ -97,20 +106,21 @@
         </div> <!-- .workshop -->
 
     </main>
-</body>
-<footer class="footer">
-    <div class="container">
-        <div class="bar">
-            <a href="index.html" class="logo">
-                <h1 class="logo__name center-text">Charlie's <span class="logo__bold">Writing Blog</span></h1>
-            </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="bar">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__name center-text">Charlie's <span class="logo__bold">Writing Blog</span></h1>
+                </a>
 
-            <nav class="navegation">
-                <a href="about.html" class="navegation__link">About</a>
-                <a href="workshops.html" class="navegation__link">Workshops</a>
-                <a href="contact.html" class="navegation__link">Contact</a>
-            </nav>
+                <nav class="navegation">
+                    <a href="about.html" class="navegation__link">About</a>
+                    <a href="workshops.html" class="navegation__link">Workshops</a>
+                    <a href="contact.html" class="navegation__link">Contact</a>
+                </nav>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+    <script src="/js/modernizr.js"></script>
+</body>
 </html>

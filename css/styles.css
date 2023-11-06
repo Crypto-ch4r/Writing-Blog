@@ -3,7 +3,7 @@
     --pFont: 'Open Sans', sans-serif;
 
     --primaryColor: #784D3C;
-    --gray: #3D3D3D;
+    --gray: #e1e1e1;
     --white: #fff;
     --black: #000;
 }
@@ -62,6 +62,12 @@ img{
     max-width: 100%;
 }
 
+@media (min-width: 768px) {
+    .entrada-img{
+        padding-left: 33rem;
+    }
+}
+
 /** Utility var **/
 
 .no-margin{
@@ -77,6 +83,14 @@ img{
 }
 
 /** Header **/
+.webp .header {
+    background-image: url('/img/banner.webp');
+
+}
+
+.no-webp .header {
+    background-image: url('/img/banner.jpg');
+}
 
 .header__text{
     text-align: center;
@@ -87,7 +101,6 @@ img{
 }
 
 .header{
-    background-image: url('/img/banner.jpg');
     height: 60rem;
     background-size: cover;
     background-position: center center;
@@ -183,6 +196,7 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media (min-width: 786px) {
@@ -195,6 +209,10 @@ img{
         height: 550px;
         width: 550px;
      }
+}
+
+.button:hover{
+    cursor: pointer;
 }
 
 .primary--button{
@@ -219,16 +237,18 @@ img{
     margin-bottom: 0;
 }
 
-.widget-workshop__label {
+.widget-workshop__label,
+.workshop__label {
     font-family: var(--headingFont);
     font-weight: bold;
 }
 
-.widget-workshop__info {
+.widget-workshop__info,
+.workshop__info {
     font-weight: normal;
 }
 
-.widget-workshop__label, .widget-workshop__info {
+.widget-workshop__label, .widget-workshop__info, .workshop__label, .workshop__info {
     font-size: 2rem;
 }
 
@@ -247,4 +267,62 @@ img{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 4rem;
     }
+}
+
+/** Workshops **/
+
+.workshop {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gray);
+}
+
+@media (min-width: 768px) {
+     .workshop{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+     }
+}
+
+.workshop:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+/** Contacto **/
+.contact-bg{
+    background-image: url('/img/contact.jpg');
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/** Form **/
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+    padding-bottom: 2rem;
+}
+
+.field{
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.field__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.field__input{
+    flex: 1;
+    border: 1px solid var(--gray);
+}
+
+.field__input--textarea{
+    height: 200px;
 }
